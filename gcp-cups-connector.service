@@ -1,0 +1,10 @@
+[Unit]
+Description=Google Cloud Print (aka GCP) CUPS Connector shares CUPS printers with users of Google Cloud Print.
+Requires=org.cups.cupsd.service
+After=org.cups.cupsd.service
+
+[Service]
+ExecStart=/usr/bin/connector
+
+[Install]
+WantedBy=multi-user.target
