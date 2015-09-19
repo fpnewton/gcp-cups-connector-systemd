@@ -4,6 +4,7 @@ Requires=org.cups.cupsd.service
 After=org.cups.cupsd.service
 
 [Service]
+WorkingDirectory=/etc/gcp-cups-connector
 ExecStart=/usr/bin/connector
 
 [Install]
